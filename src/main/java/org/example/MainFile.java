@@ -1,11 +1,7 @@
 package org.example;
-import org.example.Account;
-
-import java.util.Scanner;
 
 
-
-public class Main { // bigmain class
+public class MainFile { // bigmain class
     public static void main(String[] args) {
         //input an integer
         Account a = new Account();
