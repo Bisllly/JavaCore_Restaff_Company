@@ -3,9 +3,45 @@ package org.example;
 
 public class MainFile { // bigmain class
     public static void main(String[] args) {
+        Circle myCircle = new Circle();
+        System.out.println("====>" + myCircle);
+
+        Circle myCircle2 = new Circle(5, "blue");
+        System.out.println(myCircle2);
+        System.out.println(myCircle);
+        System.out.println(myCircle2.getColor());
+
+
+        int x = 10;
+        int y = 11;
+
+        // mutation
+        // immutation
+
+
+        y = x;
+
+        System.out.println("x = 10: " + x);
+        System.out.println("y = 10: " + y);
+
+        x = 12;
+
+        System.out.println("x = 12: " + x);
+        System.out.println("y=10: " + y);
+
+        myCircle = myCircle2;
+
+        System.out.println(myCircle2);
+        System.out.println(myCircle);
+
+        System.out.println(myCircle2.getColor());
+
+        myCircle.setColor("yellow");
+
+        System.out.println(myCircle2.getColor());
         //input an integer
-        Account a = new Account();
-        System.out.println(a.toString());
+//        Account a = new Account();
+//        System.out.println(a.toString());
 
 //        Scanner scanner = new Scanner(System.in);
 //        System.out.print("Enter an integer: ");
