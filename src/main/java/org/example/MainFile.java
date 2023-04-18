@@ -1,8 +1,13 @@
 package org.example;
-
+import static org.example.pool.SelfBrowserModel.testSelfBrowserModel;
 
 public class MainFile { // bigmain class
     public static void main(String[] args) {
+
+        //just a short function could run the whole SelfBrowserModel.java
+        testSelfBrowserModel();
+
+        // Jacob's code
         Circle myCircle = new Circle();
         System.out.println("====>" + myCircle);
 
@@ -39,6 +44,8 @@ public class MainFile { // bigmain class
         myCircle.setColor("yellow");
 
         System.out.println(myCircle2.getColor());
+
+
         //input an integer
 //        Account a = new Account();
 //        System.out.println(a.toString());

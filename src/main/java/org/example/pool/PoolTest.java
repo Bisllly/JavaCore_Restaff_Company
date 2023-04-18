@@ -1,7 +1,7 @@
 package org.example.pool;
 
 public class PoolTest {
-
+    //Basically Pool changes the value right after the variable is reassigned
 
     public static void main(String[] args) {
 
@@ -14,15 +14,19 @@ public class PoolTest {
 
         // pool
 
+//        System.out.println("first name is: " + firstName);
+//        System.out.println("last name is: " + lastName);
+
+        String temp = "Beckham";
+        firstName = temp;
+        temp = lastName;
+        lastName = "454455";
+
         System.out.println("first name is: " + firstName);
         System.out.println("last name is: " + lastName);
 
-        firstName = lastName;
-
-        System.out.println("first name is: " + firstName);
-        System.out.println("last name is: " + lastName);
-
-        lastName = "Beckham";
+        firstName = "jkjdkgjdkjgkdjgkdjgdgdg";
+        lastName = "123";
 
         System.out.println("first name is: " + firstName);
         System.out.println("last name is: " + lastName);
