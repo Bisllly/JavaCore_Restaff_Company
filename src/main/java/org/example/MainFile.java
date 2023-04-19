@@ -1,49 +1,66 @@
 package org.example;
-import static org.example.pool.SelfBrowserModel.testSelfBrowserModel;
+import org.example.pool.Browser;
 
 public class MainFile { // bigmain class
+
+
     public static void main(String[] args) {
 
+
+
         //just a short function could run the whole SelfBrowserModel.java
-        testSelfBrowserModel();
 
-        // Jacob's code
-        Circle myCircle = new Circle();
-        System.out.println("====>" + myCircle);
+        Browser chrome = new Browser("Chrome", 1.0, "Google", 1999,
+                true, true, true, false);
+        Browser safari = new Browser("Safari", 4.5, "Apple", 2001,
+                true, true, true, false);
+        Browser edge = new Browser("Edge", 12.0, "Microsoft", 2010,
+                true, true, true, true);
+        System.out.println(chrome);
+        System.out.println(safari);
+        System.out.println(edge);
 
-        Circle myCircle2 = new Circle(5, "blue");
-        System.out.println(myCircle2);
-        System.out.println(myCircle);
-        System.out.println(myCircle2.getColor());
+//        System.out.println(chrome.launch(true));
+        System.out.println(chrome.search(true));
 
-
-        int x = 10;
-        int y = 11;
-
-        // mutation
-        // immutation
-
-
-        y = x;
-
-        System.out.println("x = 10: " + x);
-        System.out.println("y = 10: " + y);
-
-        x = 12;
-
-        System.out.println("x = 12: " + x);
-        System.out.println("y=10: " + y);
-
-        myCircle = myCircle2;
-
-        System.out.println(myCircle2);
-        System.out.println(myCircle);
-
-        System.out.println(myCircle2.getColor());
-
-        myCircle.setColor("yellow");
-
-        System.out.println(myCircle2.getColor());
+//
+//        // Jacob's code
+//        Circle myCircle = new Circle();
+//        System.out.println("====>" + myCircle);
+//
+//        Circle myCircle2 = new Circle(5, "blue");
+//        System.out.println(myCircle2);
+//        System.out.println(myCircle);
+//        System.out.println(myCircle2.getColor());
+//
+//
+//        int x = 10;
+//        int y = 11;
+//
+//        // mutation
+//        // immutation
+//
+//
+//        y = x;
+//
+//        System.out.println("x = 10: " + x);
+//        System.out.println("y = 10: " + y);
+//
+//        x = 12;
+//
+//        System.out.println("x = 12: " + x);
+//        System.out.println("y=10: " + y);
+//
+//        myCircle = myCircle2;
+//
+//        System.out.println(myCircle2);
+//        System.out.println(myCircle);
+//
+//        System.out.println(myCircle2.getColor());
+//
+//        myCircle.setColor("yellow");
+//
+//        System.out.println(myCircle2.getColor());
 
 
         //input an integer
